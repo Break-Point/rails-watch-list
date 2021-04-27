@@ -11,8 +11,9 @@ require 'json'
 
 puts "Cleaning database..."
 Movie.destroy_all
-puts "Creating restaurants..."
+List.destroy_all
 
+puts "Creating movies..."
 url = 'http://tmdb.lewagon.com/movie/top_rated'
 movies_serialized = URI.open(url).read
 movies = JSON.parse(movies_serialized)
@@ -27,5 +28,11 @@ movies["results"].each do |movie|
   movie.save
   puts "Created #{movie.title}"
 end
+puts "Finished creating movies!"
 
-puts "Finished!"
+puts "Creating lists..."
+List.create(name: "Comedy 🎭")
+List.create(name: "Horror 🔪")
+List.create(name: "Crime 🚨")
+List.create(name: "Alternative 🤷‍♀️")
+puts "Finished creating lists!"
