@@ -1,0 +1,33 @@
+#list {
+  color: white;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://source.unsplash.com/1600x900/?movie');
+ }
+
+ .card-body {
+   background-color: rgb(212, 212, 212);
+ }
+
+ .card-img-top {
+   height: 250px;
+   object-fit: cover;
+ }
+
+ a.card-link {
+   color: white;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding-left: 4px;
+   padding-right: 4px;
+   border-radius: 24px;
+  //  transition: 1s;
+ }
+ a.card-link:hover {
+  color: black;
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 24px;
+}

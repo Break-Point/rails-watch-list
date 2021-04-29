@@ -9,3 +9,36 @@
   background-size:cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80');
  }
+
+ .cards {
+  width: 75%;
+ }
+
+ .card {  
+  width: 32%;
+  color: white;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?movie');
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: rgb(172, 172, 172);
+  text-decoration: none;
+}
+
+.list-header{
+  width: 75%;
+}
+
+.list-header h3{
+  margin: 0px;
+  font-weight: 900;
+}

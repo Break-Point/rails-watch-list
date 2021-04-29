@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center align-items-center" id="list">
+  <h2> <%= @list.name %> </h2>
+</div>
+
+
+<%= render 'show', list: @list %>
+
+<div class="d-flex justify-content-center align-items-center flex-column">
+
+  <div class="w-25 p-2">
+    <h4>Add a movie to the list!</h4>
+    <%= render 'bookmarks/new' %>
+    <%# <%= link_to "New Bookmark", new_list_bookmark_path(@list) %>     
+  </div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center align-items-center flex-column">
+
+  <div class="cards d-flex w-75 p-2 justify-content-start">
+    <% @list.movies.each do |movie| %>
+      <div class="cards m-2 w-50">
+        <% poster = "https://image.tmdb.org/t/p/w500#{movie.poster_url}" %>
+        <%= image_tag poster, class: "card-img-top" %>
+        <%# <<img class="card-img-top" src=poster> %>
+        <div class="card-body">
+          <div class="card-body-head d-flex align-items-center justify-content-between">
+            <h5 class="card-title"> <%= movie.title %> </h5>
+            <h5 class="card-title"> <%= movie.rating %>⭐</h5>
+          </div>
+          <p class="card-text"> <%= movie.overview %> </p>
+        </div>
+        <div class="card-body">
+          <div class="card-body-link d-flex align-items-center justify-content-between">
+            <h6 class="card-link"> <i class="fas fa-quote-right"></i> Random Movie Quote 😂 </h6>
+            <%= link_to '<i class="far fa-trash-alt"></i>'.html_safe, bookmark_path(movie_id: movie.id, list_id: list.id),
+                  class: "card-link",
+                  method: :delete,
+                  data: { confirm: "are you sure?" } %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  
+</div>

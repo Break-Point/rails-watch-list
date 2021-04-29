@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center align-items-center" id="list">
+  <h2> <%= @list.name %> </h2>
+</div>
+
+
+<div class="d-flex justify-content-center align-items-center flex-column">
+
+  <div class="w-75 p-2">
+    <%= render 'form', list: @list %>
+  </div>
+
+</div>
+
+<%= render 'show' %>
