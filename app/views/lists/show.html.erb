@@ -1,7 +1,12 @@
-<div class="d-flex justify-content-center align-items-center" id="list">
-  <h2> <%= @list.name %> </h2>
-</div>
+<head>
+  <%= javascript_pack_tag 'show', 'data-turbolinks-track': 'reload', defer: true %>
+</head>
 
+<div class="d-flex justify-content-center align-items-center flex-column" id="list">
+  <h2>
+    <%= @list.name %> 
+  </h2>
+</div>
 
 <%= render 'show', list: @list %>
 

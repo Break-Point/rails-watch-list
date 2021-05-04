@@ -1,5 +1,12 @@
-<div class="d-flex justify-content-center align-items-center" id="hero">
+<head>
+  <%= javascript_pack_tag 'index', 'data-turbolinks-track': 'reload', defer: true %>
+</head>
+
+<div class="d-flex justify-content-center align-items-center flex-column" id="hero">
   <h2>List of movies</h2>
+  <p>
+    <span id="banner-typed-text"></span>    
+  </p>
 </div>
 
 
@@ -8,6 +15,7 @@
   
   <div class="list-header p-3 m-2 d-flex justify-content-between">
     <h3 class="p-1 m-1 d-flex align-items-center">My lists</h3>
+    <%# <button id="sweet-alert-demo" class="btn btn-primary">Click me!</button> %>
     <h3 class="p-2 m-1 d-flex align-items-center btn btn-success " data-toggle="modal" data-target="#NewListModal" data-whatever=""><i class="far fa-plus-square"> add a new list</i></h3>
   </div>
   
