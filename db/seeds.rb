@@ -10,8 +10,8 @@ require 'open-uri'
 require 'json'
 
 puts "Cleaning database..."
-Movie.destroy_all
-List.destroy_all
+# Movie.destroy_all
+# List.destroy_all
 
 puts "Creating movies..."
 url = 'http://tmdb.lewagon.com/movie/top_rated'
@@ -31,8 +31,8 @@ end
 puts "Finished creating movies!"
 
 puts "Creating lists..."
-List.create(name: "Comedy 🎭")
-List.create(name: "Horror 🔪")
-List.create(name: "Crime 🚨")
-List.create(name: "Alternative 🤷‍♀️")
+# List.create(name: "Comedy 🎭")
+# List.create(name: "Horror 🔪")
+# List.create(name: "Crime 🚨")
+# List.create(name: "Alternative 🤷‍♀️")
 puts "Finished creating lists!"
