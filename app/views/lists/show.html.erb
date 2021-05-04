@@ -1,8 +1,4 @@
-<head>
-  <%= javascript_pack_tag 'show', 'data-turbolinks-track': 'reload', defer: true %>
-</head>
-
-<div class="d-flex justify-content-center align-items-center flex-column" id="list">
+<div class="d-flex justify-content-center align-items-center flex-column" id="list" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @list.photo.key, height: 300, crop: :fill %>')">
   <h2>
     <%= @list.name %> 
   </h2>
