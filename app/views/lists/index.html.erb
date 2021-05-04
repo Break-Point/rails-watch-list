@@ -21,7 +21,7 @@
   
   <div class="cards d-flex p-2 justify-content-between flex-wrap">  
     <% @lists.each do |list| %>
-      <div class="card m-2 justify-content-center align-items-center" >
+      <div class="card m-2 justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
         <%= link_to list_path(list) do %>
           <h3 class="card-title mb-0"> <%= list.name %></h3>
         <% end %>
