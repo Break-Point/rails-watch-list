@@ -17,15 +17,15 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import 'bootstrap';
-
-
 import { loadDynamicBannerText } from '../components/banner';
 import { initSweetalert } from '../plugins/init_sweetalert';
+import { initSelect2 } from '../plugins/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   // [...]
   loadDynamicBannerText();
+  initSelect2();
   initSweetalert('.sweet-alert-demo', {
     title: "A nice alert",
     text: "This is a great alert, isn't it?",

@@ -1,5 +1,5 @@
 <%= simple_form_for [ @list, @bookmark], remote: true do |f| %>
-  <%= f.association :movie %>
+  <%= f.association :movie, input_html: { class: 'select2' } %>
   <%= f.input :comment %>
   <%= f.submit "Submit review", class: "btn btn-primary" %>
 <% end %>
