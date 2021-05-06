@@ -13,14 +13,13 @@
   
   <div class="list-header p-3 m-2 d-flex justify-content-between">
     <h3 class="p-1 m-1 d-flex align-items-center">My lists</h3>
-    <%# <button id="sweet-alert-demo" class="btn btn-primary">Click me!</button> %>
     <h3 class="p-2 m-1 d-flex align-items-center btn btn-success " data-toggle="modal" data-target="#NewListModal" data-whatever=""><i class="far fa-plus-square"> add a new list</i></h3>
   </div>
   
   <div class="cards d-flex p-2 justify-content-between flex-wrap">  
     <% @lists.each do |list| %>
       <div class="card m-2 justify-content-center align-items-center">
-      <%# <div class="card m-2 justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')"> %>
+      <div class="card m-2 justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path list.photo.key, height: 300, crop: :fill %>')">
         <%= link_to list_path(list) do %>
           <h3 class="card-title mb-0"> <%= list.name %></h3>
         <% end %>
